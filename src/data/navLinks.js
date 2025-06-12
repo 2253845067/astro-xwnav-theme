@@ -23,16 +23,16 @@ npx tsx icon-system/0icon.ts
  */
 export const categories = [
   {
+    id: 'fuwuqidajian',
+    name: '服务器搭建', icon: '/icons/category/studying.svg',
+  },
+  {
+    id: 'jialiyundajian',
+    name: '家里云搭建', icon: '/icons/category/studying.svg',
+  },
+  {
     id: 'opensource',
     name: '开源平台', icon: '/icons/category/opensource.svg',
-  },
-  {
-    id: 'Studying',
-    name: '个人其他站点', icon: '/icons/category/studying.svg',
-  },
-  {
-    id: 'ipleak',
-    name: '网络安全', icon: '/icons/category/ipleak.svg', 
   },
 ];
 /**
@@ -40,63 +40,24 @@ export const categories = [
  * @type {Array<{id: string, title: string, description: string, shortDesc: string, url: string, icon: string, category: string}>}
  */
 export const sites = [
-  //开源
+  //服务器搭建
   {
-    id: 'github',
-    title: 'GitHub',
-    description: '全球最大的开源代码托管平台，支持 Git 版本控制，适用于协作开发、项目管理和自动化工作流，是开发者共享与协作的核心工具。',
-    shortDesc: '全球最大代码托管平台。',
-    url: 'https://github.com/',
-    icon: '/icons/github.webp',
-    category: 'opensource'
+    id: 'tanzhen',
+    title: '探针',
+    description: '由racknerd提供服务',
+    shortDesc: '监控服务器',
+    url: 'https://vps.051516.xyz/',
+    category: 'fuwuqidajian'
   },
+  //服务器搭建
   {
-    id: 'docker-hub',
-    title: 'Docker Hub',
-    description: '官方容器镜像仓库，提供镜像上传、分发与管理，支持快速部署各类 Docker 应用，是容器生态的基础服务平台。',
-    shortDesc: 'Docker容器镜像仓库。',
-    url: 'https://hub.docker.com/',
-    icon: '/icons/docker-hub.webp',
-    category: 'opensource'
+    id: 'yadianna',
+    title: '雅典娜',
+    description: '由雅典娜路由器提供服务',
+    shortDesc: '路由器后台',
+    url: 'http://ydn.yuqi.fun:5155',
+    category: 'jialiyundajian'
   },
-  //个人其他站点      
-      {
-      id: 'zywede',
-      title: 'zywe.de',
-      description: '个人主页与知识集散地。作为技术爱好者，展示自己的全部项目、实践与分享的中心',
-      shortDesc: 'zywe个人官网',
-      url: 'https://zywe.de/',
-      category: 'Studying',
-      icon: '/icons/zywede.png',
-      },
-      {
-      id: 'dh_zywede',
-      title: 'dh.zywe.de',
-      description: '专属导航页,这里汇聚了日常学习、开发与管理服务器所需的所有高效工具与资源链接，快速触达各项在线服务的便捷入口，确保学习与实践的流畅性。',
-      shortDesc: '让每个人都有自己的网站式收藏夹',
-      url: 'https://dh.zywe.de/',
-      category: 'Studying',
-      icon: '/icons/dh-zywede.png',
-      },
-      // IP, DNS Leak, WebRTC Leak Check      
-      {
-      id: 'browserleaks',
-      title: 'Browserleaks',
-      description: 'Browserleaks是一个全面的浏览器安全和隐私检测网站，能够详细检测用户的IP地址、DNS服务器、WebRTC信息以及多种浏览器指纹，帮助用户了解哪些个人或设备信息可能在网上泄露，以便采取保护措施。',
-      shortDesc: '全面浏览器和网络隐私检测。',
-      url: 'https://browserleaks.com/',
-      category: 'ipleak',
-      icon: '/icons/browserleaks.webp',
-      },      
-      {
-      id: 'ipcheck',
-      title: 'IPCheck',
-      description: 'IPCheck是一个简单易用的工具，用于快速检查用户的IP地址、正在使用的DNS服务器以及是否存在WebRTC泄露，提供直观的测试结果，方便用户验证其网络连接的匿名性和安全性。',
-      shortDesc: '检查IP、DNS、WebRTC泄露。',
-      url: 'https://ipcheck.ing/',
-      category: 'ipleak',
-      icon: '/icons/ipcheck.webp',
-      },
 ];
 /**
  * @param {string} query
